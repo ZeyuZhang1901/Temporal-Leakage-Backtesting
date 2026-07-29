@@ -1,0 +1,128 @@
+{
+ "leakage_arms": {
+  "gpt55": {
+   "cutoff": "2025-12-01",
+   "relatives": [
+    "OpenAI.gpt-5-mini-2025-08-07",
+    "OpenAI.gpt-5.1-2025-11-13"
+   ],
+   "variants": {
+    "banded_h10_75": {
+     "anchored_questions": 392,
+     "per_relative": {
+      "OpenAI.gpt-5-mini-2025-08-07": 392,
+      "OpenAI.gpt-5.1-2025-11-13": 276
+     },
+     "mean_horizon_pre": 28.93548387096774,
+     "mean_horizon_post": 33.32963988919668,
+     "result": {
+      "jump": 0.10613622636740593,
+      "ci": [
+       0.056207145643443715,
+       0.18877925095281178
+      ],
+      "star": true,
+      "n_pre": 31,
+      "n_post": 361
+     }
+    },
+    "latest": {
+     "anchored_questions": 499,
+     "per_relative": {
+      "OpenAI.gpt-5-mini-2025-08-07": 499,
+      "OpenAI.gpt-5.1-2025-11-13": 327
+     },
+     "mean_horizon_pre": 16.446153846153845,
+     "mean_horizon_post": 33.82027649769585,
+     "result": {
+      "jump": 0.06078944049874682,
+      "ci": [
+       0.023118432546918633,
+       0.09322720150823426
+      ],
+      "star": true,
+      "n_pre": 65,
+      "n_post": 434
+     }
+    }
+   }
+  },
+  "gpt54": {
+   "cutoff": "2025-08-31",
+   "relatives": [
+    "OpenAI.gpt-4.1-2025-04-14",
+    "OpenAI.o4-mini-2025-04-16"
+   ],
+   "variants": {
+    "banded_h10_75": {
+     "anchored_questions": 162,
+     "per_relative": {
+      "OpenAI.gpt-4.1-2025-04-14": 161,
+      "OpenAI.o4-mini-2025-04-16": 78
+     },
+     "mean_horizon_pre": 34.43076923076923,
+     "mean_horizon_post": 34.865979381443296,
+     "result": {
+      "jump": 0.010617512128469455,
+      "ci": [
+       -0.022171216732897202,
+       0.10867435607058623
+      ],
+      "star": false,
+      "n_pre": 65,
+      "n_post": 97
+     }
+    },
+    "latest": {
+     "anchored_questions": 284,
+     "per_relative": {
+      "OpenAI.gpt-4.1-2025-04-14": 281,
+      "OpenAI.o4-mini-2025-04-16": 160
+     },
+     "mean_horizon_pre": 26.11111111111111,
+     "mean_horizon_post": 56.97837837837838,
+     "result": {
+      "jump": 0.04833186842706115,
+      "ci": [
+       0.014443909045964955,
+       0.11392582337491719
+      ],
+      "star": true,
+      "n_pre": 99,
+      "n_post": 185
+     }
+    }
+   }
+  }
+ },
+ "protocol_arms": {
+  "gpt5": {
+   "own_file": "OpenAI.gpt-5-2025-08-07",
+   "n": 50,
+   "prob_shift": [
+    -0.020567000000000002,
+    -0.055589025000000014,
+    0.010368325
+   ],
+   "brier_diff_retro_minus_rt": [
+    0.013455088550000001,
+    -0.013283512637500001,
+    0.039537331208750005
+   ]
+  },
+  "dsv31": {
+   "own_file": "DeepSeek.DeepSeek-V3.1",
+   "n": 910,
+   "prob_shift": [
+    0.020677692087692313,
+    0.009437991422425827,
+    0.03233178263439836
+   ],
+   "brier_diff_retro_minus_rt": [
+    0.015573710956043936,
+    0.005235393092857122,
+    0.02617051604478023
+   ]
+  }
+ }
+}
