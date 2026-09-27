@@ -2,10 +2,10 @@
 """Regenerate the appendix figures with the unified paper style.
 
 Reads stored result JSONs only (no recomputation):
-  results/M1_synthetic/results.json            -> m1 (E1 synthetic), e1_supp
-  results/M5_livecodebench/e3_robustness.json  -> e3_robustness (GPT-4-Turbo dropped)
-  results/M5_livecodebench/e3_global_sensitivity.json -> e3_global_sensitivity
-  results/M6_prc_matched/results.json          -> prc_matched
+  synthetic/results.json            -> m1 (E1 synthetic), e1_supp
+  livecodebench/e3_robustness.json  -> e3_robustness (GPT-4-Turbo dropped)
+  livecodebench/e3_global_sensitivity.json -> e3_global_sensitivity
+  prc_matched/results.json          -> prc_matched
 """
 import json
 import sys
@@ -14,18 +14,18 @@ from pathlib import Path
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from paper_style import (BLUE, GREEN, GREY, ORANGE, PURPLE, RED, REDESIGN,
+from paper_style import (BLUE, GREEN, GREY, ORANGE, PURPLE, RED, ROOT,
                          apply_style, panel_letter, save)
 
 apply_style()
 import matplotlib.pyplot as plt
 
-RESULTS = REDESIGN.parent / "results"
+RESULTS = ROOT.parent
 
 
 # ---- E1 synthetic: main figure (T1-T4) --------------------------------------
 def fig_e1():
-    res = json.loads((RESULTS / "M1_synthetic" / "results.json").read_text())
+    res = json.loads((RESULTS / "synthetic" / "results.json").read_text())
     fig, ax = plt.subplots(2, 2, figsize=(6.0, 4.6))
 
     a = ax[0, 0]
@@ -85,7 +85,7 @@ def fig_e1():
 
 # ---- E1 synthetic: supplementary (T5-T6) ------------------------------------
 def fig_e1_supp():
-    res = json.loads((RESULTS / "M1_synthetic" / "results.json").read_text())
+    res = json.loads((RESULTS / "synthetic" / "results.json").read_text())
     fig, ax = plt.subplots(1, 2, figsize=(6.0, 2.6))
 
     a = ax[0]
@@ -129,7 +129,7 @@ CONTROL_LABEL = {"gemini25pro_0506": "Gemini-2.5-Pro",
 
 def fig_e3_robustness():
     out = json.loads(
-        (RESULTS / "M5_livecodebench" / "e3_robustness.json").read_text())
+        (RESULTS / "livecodebench" / "e3_robustness.json").read_text())
     targets = list(TARGET_LABEL)
     fig, ax = plt.subplots(2, 2, figsize=(6.8, 5.4))
 
@@ -212,7 +212,7 @@ def fig_e3_robustness():
 # ---- M4-C global-B sensitivity ----------------------------------------------
 def fig_e3_global():
     out = json.loads(
-        (RESULTS / "M5_livecodebench" / "e3_global_sensitivity.json")
+        (RESULTS / "livecodebench" / "e3_global_sensitivity.json")
         .read_text())
     targets = list(out["strict_old_control"])
     fig, ax = plt.subplots(1, 2, figsize=(6.0, 2.6))
@@ -249,7 +249,7 @@ def fig_e3_global():
 # ---- Matched real-data PRC ---------------------------------------------------
 def fig_prc_matched():
     out = json.loads(
-        (RESULTS / "M6_prc_matched" / "results.json").read_text())
+        (RESULTS / "prc_matched" / "results.json").read_text())
     methods = list(out["methods"])
     domains = list(out["methods"][methods[0]]["domains"])
     fig, ax = plt.subplots(1, 2, figsize=(6.0, 2.6))

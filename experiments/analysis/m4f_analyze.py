@@ -17,6 +17,7 @@ statistic, 10,000 draws.
 Output: m4f/results.json + figures/m4f_matrix.txt (paper table source)
 """
 import json
+import zlib
 import sys
 from datetime import date, timedelta
 from pathlib import Path
@@ -24,7 +25,7 @@ from pathlib import Path
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from forecasting_common import (MODEL_CUTOFF, REDESIGN, joined, load_panel)
+from forecasting_common import (MODEL_CUTOFF, ROOT, joined, load_panel)
 
 TARGETS = ["dsv31", "kimi26", "gpt54", "gpt55"]
 EXPLORATORY = ["gemini31"]
@@ -108,7 +109,7 @@ def main():
                 cell = {"jump": j, "n_pre": npre, "n_post": npost}
                 if j is not None and h == BW:
                     cell["ci"] = boot_ci(series[t], D, h,
-                                         seed=hash((t, bt)) % 2**31)
+                                         seed=zlib.crc32(f"{t}|{bt}".encode()))
                     cell["star"] = bool(cell["ci"][0] > 0 or cell["ci"][1] < 0)
                 row.setdefault(bt, {})[f"h{h}"] = cell
         matrix[t] = row
@@ -171,8 +172,8 @@ def main():
             return str(o)
         raise TypeError
 
-    (REDESIGN / "m4f").mkdir(exist_ok=True)
-    (REDESIGN / "m4f" / "results.json").write_text(
+    (ROOT / "m4f").mkdir(exist_ok=True)
+    (ROOT / "m4f" / "results.json").write_text(
         json.dumps(out, indent=1, default=default))
 
     # text table
@@ -196,7 +197,7 @@ def main():
                  f"{obs if obs is None else round(obs, 4)}, "
                  f"permutation p = {p_perm}")
     txt = "\n".join(lines)
-    (REDESIGN / "figures" / "m4f_matrix.txt").write_text(txt)
+    (ROOT / "figures" / "m4f_matrix.txt").write_text(txt)
     print(txt)
 
 

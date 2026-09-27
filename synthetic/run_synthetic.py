@@ -1,5 +1,5 @@
 """
-M1 (main): synthetic validation of the leakage estimator against known ground truth.
+E1: synthetic validation of the leakage estimator against known ground truth.
 Four results, each tied to a contribution:
   T1 Recovery + CI coverage (C1,C5): estimator recovers injected leakage, ~95% coverage.
   T2 RD recovery + placebo (C3): jump tracks injected boundary leakage; no-leak placebo ~0.

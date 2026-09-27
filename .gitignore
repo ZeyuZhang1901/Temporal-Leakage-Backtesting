@@ -1,0 +1,8 @@
+.env
+__pycache__/
+.DS_Store
+experiments/cache/
+experiments/figures/
+experiments/data/forecastbench-processed-forecast-sets/
+prc_matched/probe/
+prc_matched/questions.jsonl

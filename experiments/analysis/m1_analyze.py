@@ -13,7 +13,7 @@ from pathlib import Path
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from forecasting_common import (MODEL_CUTOFF, REDESIGN, cluster_bootstrap_gap,
+from forecasting_common import (MODEL_CUTOFF, ROOT, cluster_bootstrap_gap,
                                 joined, load_panel, naive_gap)
 
 ROWS = [
@@ -70,7 +70,7 @@ def main():
         print(f"  {name:16s} n={n_pre}/{n_post}  gap={gap:+.4f} "
               f"[{ci[0]:+.4f},{ci[1]:+.4f}] {'*' if star else ''}")
 
-    out = REDESIGN / "m1" / "results.json"
+    out = ROOT / "m1" / "results.json"
     out.write_text(json.dumps(
         {"per_model": results,
          "matched_window": {"clean_from": str(lo_m), "boundary": str(bd_m),
@@ -97,8 +97,8 @@ def main():
                   "(clean window)")
     ax.set_title("Provably-clean models 'fail' the naive contamination check")
     fig.tight_layout()
-    fig.savefig(REDESIGN / "figures" / "m1_forest.pdf")
-    fig.savefig(REDESIGN / "figures" / "m1_forest.png", dpi=160)
+    fig.savefig(ROOT / "figures" / "m1_forest.pdf")
+    fig.savefig(ROOT / "figures" / "m1_forest.png", dpi=160)
     print("saved m1/results.json and figures/m1_forest.*")
 
 

@@ -18,9 +18,8 @@ from pathlib import Path
 import numpy as np
 import matplotlib; matplotlib.use("Agg"); import matplotlib.pyplot as plt
 
-EXP = Path(__file__).resolve().parents[2]
-CSV = EXP / "data" / "hubble_testset.csv"
 OUT = Path(__file__).resolve().parent
+CSV = OUT / "hubble_testset.csv"
 MCQ = ["mmlu", "piqa", "hellaswag", "winogrande_mcq"]
 DUPS = [0, 1, 4, 16, 64, 256]
 PAIRS = [("8b", "500b"), ("8b", "100b"), ("1b", "500b")]

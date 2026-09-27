@@ -3,7 +3,7 @@
 
 Reads existing result JSONs (no recomputation):
   m1/results.json                       -> m1_forest
-  results/M2_hubble/results.json        -> m2
+  hubble/results.json        -> m2
   m3/analysis_full.json                 -> m3_dose_response, m3_concentration
   m3/prc_differenced.json               -> m3_prc
   m5/results.json                       -> m5_dissolve
@@ -15,18 +15,18 @@ from pathlib import Path
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from paper_style import (BLUE, GREEN, GREY, RED, REDESIGN, apply_style,
+from paper_style import (BLUE, GREEN, GREY, RED, ROOT, apply_style,
                          panel_letter, save)
 
 apply_style()
 import matplotlib.pyplot as plt
 
-EXPERIMENT = REDESIGN.parent
+PACKAGE = ROOT.parent
 
 
 # ---- M1: forest plot --------------------------------------------------------
 def fig_m1():
-    results = json.loads((REDESIGN / "m1" / "results.json").read_text())
+    results = json.loads((ROOT / "m1" / "results.json").read_text())
     if isinstance(results, dict):
         results = results["per_model"]
     n = len(results)
@@ -52,7 +52,7 @@ def fig_m1():
 # ---- M2: Hubble 2x2 ---------------------------------------------------------
 def fig_m2():
     res = json.loads(
-        (EXPERIMENT / "results" / "M2_hubble" / "results.json").read_text())
+        (PACKAGE / "hubble" / "results.json").read_text())
     head = res["8b-500b"]
     DUPS = [0, 1, 4, 16, 64, 256]
     mt = {r: head["aggregate"]["raw_twin"][str(r)] for r in DUPS}
@@ -118,7 +118,7 @@ def fig_m2():
 # ---- M2: main-text dose response (headline panel) ---------------------------
 def fig_m2_main():
     res = json.loads(
-        (EXPERIMENT / "results" / "M2_hubble" / "results.json").read_text())
+        (PACKAGE / "hubble" / "results.json").read_text())
     head = res["8b-500b"]
     DUPS = [0, 1, 4, 16, 64, 256]
     mc = {r: head["aggregate"]["placebo_centered_twin"][str(r)] for r in DUPS}
@@ -146,7 +146,7 @@ def fig_m2_main():
 
 # ---- M3: dose-response ------------------------------------------------------
 def fig_m3_dose():
-    res = json.loads((REDESIGN / "m3" / "analysis_full.json").read_text())
+    res = json.loads((ROOT / "m3" / "analysis_full.json").read_text())
     dr = res["dose_response"]
     doses = [0, 1, 4, 16, 64]
     means = [dr[str(d)]["B_twin"][0] for d in doses]
@@ -172,7 +172,7 @@ def fig_m3_dose():
 
 # ---- M3: concentration law --------------------------------------------------
 def fig_m3_conc():
-    res = json.loads((REDESIGN / "m3" / "analysis_full.json").read_text())
+    res = json.loads((ROOT / "m3" / "analysis_full.json").read_text())
     conc = res["concentration_q5"]
     fig, axes = plt.subplots(1, 2, figsize=(6.4, 2.7), sharey=True)
     ymax = 0.0
@@ -208,7 +208,7 @@ def fig_m3_conc():
 
 # ---- M3: differenced PRC ----------------------------------------------------
 def fig_m3_prc():
-    dprc = json.loads((REDESIGN / "m3" / "prc_differenced.json").read_text())
+    dprc = json.loads((ROOT / "m3" / "prc_differenced.json").read_text())
     cells = [("dose0", "$r=0$"), ("d1", "$r=1$"), ("d4", "$r=4$"),
              ("d16", "$r=16$"), ("d64", "$r=64$")]
     fig, ax = plt.subplots(figsize=(4.6, 2.7))
@@ -234,7 +234,7 @@ def fig_m3_prc():
 
 # ---- M5: dissolve plot ------------------------------------------------------
 def fig_m5():
-    res = json.loads((REDESIGN / "m5" / "results.json").read_text())
+    res = json.loads((ROOT / "m5" / "results.json").read_text())
     rows = res["rows"]
     names = [r["name"] for r in rows]
     n = len(rows)

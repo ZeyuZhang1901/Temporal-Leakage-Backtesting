@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build the unified forecasting panel from the ForecastBench archive.
 
-Outputs (in redesign/data/):
+Outputs (in experiments/data/):
   panel_market.jsonl   - unique resolved binary market questions
                          (Polymarket/Metaculus/Manifold/INFER), one row each,
                          with all crowd-anchor snapshots and the resolution.

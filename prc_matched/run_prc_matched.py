@@ -10,6 +10,7 @@ Querying is cached through the existing Qwen/paraphrase cache. No GPT-4-Turbo ca
 import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import json
+import os
 import sys
 import time
 from pathlib import Path
@@ -23,11 +24,10 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import KFold
 
 HERE = Path(__file__).resolve().parent
-EXP = HERE.parents[1]
-DEMO = EXP / "demo"
-DATA = EXP / "emnlp2026" / "final" / "binary.jsonl"
-sys.path.insert(0, str(DEMO))
-from exp2_leakage import gen_paraphrases, predict_prob  # noqa: E402
+# Binary question file (not redistributed); set PRC_QUESTIONS to its location.
+DATA = Path(os.environ.get("PRC_QUESTIONS", HERE / "questions.jsonl"))
+sys.path.insert(0, str(HERE))
+from paraphrase_probe import gen_paraphrases, predict_prob  # noqa: E402
 
 SEED = 20260710
 K = 8

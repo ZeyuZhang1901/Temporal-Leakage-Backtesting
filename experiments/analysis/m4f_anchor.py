@@ -23,16 +23,22 @@ Two designs:
 Output: m4f/anchor_results.json + printout.
 """
 import json
+import os
 import sys
+import zlib
 from datetime import date, timedelta
 from pathlib import Path
 
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from forecasting_common import MODEL_CUTOFF, REDESIGN, joined, load_panel
+from forecasting_common import MODEL_CUTOFF, ROOT, joined, load_panel
 
-FSETS = Path("/tmp/fb_check/fsets/forecastbench-processed-forecast-sets")
+# ForecastBench processed forecast sets (public archive); set FORECASTBENCH_FSETS
+# to their location, or place them under data/.
+FSETS = Path(os.environ.get(
+    "FORECASTBENCH_FSETS",
+    ROOT / "data" / "forecastbench-processed-forecast-sets"))
 
 # leakage arms: target tag -> list of real-time relative model files
 FAMILY_ANCHORS = {
@@ -160,7 +166,7 @@ def main():
                 items.append((row["_d"], r["L"] - L_rt, r["cl"]))
                 (hor_pre if row["_d"] < D else hor_post).append(
                     float(np.mean(hs)))
-            res = boot_jump(items, D, seed=hash((tag, vname)) % 2**31)
+            res = boot_jump(items, D, seed=zlib.crc32(f"{tag}|{vname}".encode()))
             arm["variants"][vname] = {
                 "anchored_questions": len(items), "per_relative": used,
                 "mean_horizon_pre": float(np.mean(hor_pre)) if hor_pre else None,
@@ -199,8 +205,8 @@ def main():
         print(f"[protocol] {tag}: n={len(diffs)} prob shift "
               f"{out['protocol_arms'][tag]['prob_shift']}")
 
-    (REDESIGN / "m4f").mkdir(exist_ok=True)
-    (REDESIGN / "m4f" / "anchor_results.json").write_text(
+    (ROOT / "m4f").mkdir(exist_ok=True)
+    (ROOT / "m4f" / "anchor_results.json").write_text(
         json.dumps(out, indent=1))
     print("saved m4f/anchor_results.json")
 

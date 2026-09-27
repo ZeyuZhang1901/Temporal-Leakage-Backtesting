@@ -1,0 +1,190 @@
+GPT-5.5 sensitivity. jump = mean pre - mean post; * = 95% CI excludes 0
+WF pooled   unbanded      cutoff-60          h= 60 -0.056 [-0.358,-0.019]* n=18/47
+WF pooled   unbanded      cutoff-60          h= 90 -0.017 [-0.257,+0.028]  n=18/101
+WF pooled   unbanded      cutoff-60          h=120 +0.018 [-0.217,+0.055]  n=18/331
+WF pooled   unbanded      cutoff-30          h= 60 +0.042 [-0.033,+0.207]  n=30/84
+WF pooled   unbanded      cutoff-30          h= 90 +0.052 [-0.075,+0.119]  n=35/314
+WF pooled   unbanded      cutoff-30          h=120 +0.050 [-0.083,+0.119]  n=35/369
+WF pooled   unbanded      cutoff+0           h= 60 +0.087 [+0.067,+0.218]* n=47/284
+WF pooled   unbanded      cutoff+0           h= 90 +0.078 [+0.057,+0.124]* n=60/339
+WF pooled   unbanded      cutoff+0           h=120 +0.061 [+0.024,+0.093]* n=65/434
+WF pooled   unbanded      cutoff+30          h= 60 +0.036 [+0.004,+0.084]* n=84/285
+WF pooled   unbanded      cutoff+30          h= 90 +0.037 [+0.009,+0.080]* n=101/380
+WF pooled   unbanded      cutoff+30          h=120 +0.049 [+0.021,+0.091]* n=114/549
+WF pooled   unbanded      cutoff+60          h= 60 -0.031 [-0.068,-0.015]* n=284/150
+WF pooled   unbanded      cutoff+60          h= 90 +0.005 [-0.021,+0.044]  n=314/319
+WF pooled   unbanded      cutoff+60          h=120 +0.012 [-0.011,+0.049]  n=331/455
+WF pooled   unbanded      placebo_2026-03-01 h= 60 +0.004 [-0.030,+0.053]  n=285/264
+WF pooled   unbanded      placebo_2026-03-01 h= 90 +0.007 [-0.020,+0.041]  n=339/400
+WF pooled   unbanded      placebo_2026-03-01 h=120 +0.017 [-0.004,+0.047]  n=369/531
+WF pooled   unbanded      placebo_2026-04-01 h= 60 +0.041 [+0.016,+0.109]* n=185/274
+WF pooled   unbanded      placebo_2026-04-01 h= 90 +0.030 [+0.004,+0.065]* n=285/404
+WF pooled   unbanded      placebo_2026-04-01 h=120 +0.021 [+0.002,+0.046]* n=466/523
+WF pooled   banded_h10_75 cutoff-60          h= 60 -0.059 [-0.233,-0.000]* n=11/20
+WF pooled   banded_h10_75 cutoff-60          h= 90 +0.025 [-0.127,+0.069]  n=11/63
+WF pooled   banded_h10_75 cutoff-60          h=120 +0.065 [-0.046,+0.093]  n=11/279
+WF pooled   banded_h10_75 cutoff-30          h= 60 +0.098 [-0.061,+0.208]  n=16/58
+WF pooled   banded_h10_75 cutoff-30          h= 90 +0.125 [-0.029,+0.238]  n=16/274
+WF pooled   banded_h10_75 cutoff-30          h=120 +0.122 [-0.031,+0.238]  n=16/315
+WF pooled   banded_h10_75 cutoff+0           h= 60 +0.134 [+0.078,+0.256]* n=20/259
+WF pooled   banded_h10_75 cutoff+0           h= 90 +0.108 [+0.057,+0.192]* n=31/300
+WF pooled   banded_h10_75 cutoff+0           h=120 +0.106 [+0.056,+0.188]* n=31/361
+WF pooled   banded_h10_75 cutoff+30          h= 60 +0.030 [-0.002,+0.085]  n=58/257
+WF pooled   banded_h10_75 cutoff+30          h= 90 +0.044 [+0.007,+0.140]* n=63/318
+WF pooled   banded_h10_75 cutoff+30          h=120 +0.053 [+0.016,+0.126]* n=74/431
+WF pooled   banded_h10_75 cutoff+60          h= 60 -0.024 [-0.058,-0.004]* n=259/102
+WF pooled   banded_h10_75 cutoff+60          h= 90 +0.000 [-0.027,+0.033]  n=274/215
+WF pooled   banded_h10_75 cutoff+60          h=120 +0.013 [-0.011,+0.051]  n=279/313
+WF pooled   banded_h10_75 placebo_2026-03-01 h= 60 +0.005 [-0.026,+0.046]  n=257/174
+WF pooled   banded_h10_75 placebo_2026-03-01 h= 90 +0.014 [-0.012,+0.047]  n=300/272
+WF pooled   banded_h10_75 placebo_2026-03-01 h=120 +0.014 [-0.011,+0.045]  n=315/352
+WF pooled   banded_h10_75 placebo_2026-04-01 h= 60 +0.040 [+0.016,+0.097]* n=127/189
+WF pooled   banded_h10_75 placebo_2026-04-01 h= 90 +0.021 [-0.013,+0.058]  n=217/268
+WF pooled   banded_h10_75 placebo_2026-04-01 h=120 +0.014 [-0.012,+0.043]  n=385/352
+WF gpt5mini unbanded      cutoff-60          h= 60 -0.062 [-0.408,-0.023]* n=18/47
+WF gpt5mini unbanded      cutoff-60          h= 90 -0.021 [-0.260,+0.023]  n=18/101
+WF gpt5mini unbanded      cutoff-60          h=120 +0.022 [-0.221,+0.059]  n=18/331
+WF gpt5mini unbanded      cutoff-30          h= 60 +0.036 [-0.042,+0.192]  n=30/84
+WF gpt5mini unbanded      cutoff-30          h= 90 +0.057 [-0.058,+0.129]  n=35/314
+WF gpt5mini unbanded      cutoff-30          h=120 +0.053 [-0.070,+0.122]  n=35/369
+WF gpt5mini unbanded      cutoff+0           h= 60 +0.098 [+0.075,+0.486]* n=47/284
+WF gpt5mini unbanded      cutoff+0           h= 90 +0.086 [+0.063,+0.136]* n=60/339
+WF gpt5mini unbanded      cutoff+0           h=120 +0.067 [+0.027,+0.104]* n=65/434
+WF gpt5mini unbanded      cutoff+30          h= 60 +0.046 [-0.012,+0.093]  n=84/285
+WF gpt5mini unbanded      cutoff+30          h= 90 +0.044 [+0.012,+0.085]* n=101/380
+WF gpt5mini unbanded      cutoff+30          h=120 +0.057 [+0.030,+0.099]* n=114/549
+WF gpt5mini unbanded      cutoff+60          h= 60 -0.041 [-0.081,-0.025]* n=284/150
+WF gpt5mini unbanded      cutoff+60          h= 90 +0.003 [-0.027,+0.046]  n=314/319
+WF gpt5mini unbanded      cutoff+60          h=120 +0.006 [-0.021,+0.044]  n=331/455
+WF gpt5mini unbanded      placebo_2026-03-01 h= 60 +0.003 [-0.029,+0.063]  n=285/264
+WF gpt5mini unbanded      placebo_2026-03-01 h= 90 +0.001 [-0.028,+0.037]  n=339/400
+WF gpt5mini unbanded      placebo_2026-03-01 h=120 +0.012 [-0.012,+0.044]  n=369/531
+WF gpt5mini unbanded      placebo_2026-04-01 h= 60 +0.037 [+0.005,+0.106]* n=185/274
+WF gpt5mini unbanded      placebo_2026-04-01 h= 90 +0.024 [-0.006,+0.060]  n=285/404
+WF gpt5mini unbanded      placebo_2026-04-01 h=120 +0.014 [-0.009,+0.041]  n=466/523
+WF gpt5mini banded_h10_75 cutoff-60          h= 60 -0.059 [-0.233,-0.000]* n=11/20
+WF gpt5mini banded_h10_75 cutoff-60          h= 90 +0.019 [-0.123,+0.060]  n=11/63
+WF gpt5mini banded_h10_75 cutoff-60          h=120 +0.072 [-0.037,+0.100]  n=11/279
+WF gpt5mini banded_h10_75 cutoff-30          h= 60 +0.091 [-0.065,+0.205]  n=16/58
+WF gpt5mini banded_h10_75 cutoff-30          h= 90 +0.132 [-0.021,+0.244]  n=16/274
+WF gpt5mini banded_h10_75 cutoff-30          h=120 +0.126 [-0.027,+0.240]  n=16/315
+WF gpt5mini banded_h10_75 cutoff+0           h= 60 +0.141 [+0.086,+0.264]* n=20/259
+WF gpt5mini banded_h10_75 cutoff+0           h= 90 +0.113 [+0.063,+0.195]* n=31/300
+WF gpt5mini banded_h10_75 cutoff+0           h=120 +0.107 [+0.054,+0.186]* n=31/361
+WF gpt5mini banded_h10_75 cutoff+30          h= 60 +0.043 [+0.006,+0.091]* n=58/257
+WF gpt5mini banded_h10_75 cutoff+30          h= 90 +0.052 [+0.013,+0.136]* n=63/318
+WF gpt5mini banded_h10_75 cutoff+30          h=120 +0.066 [+0.031,+0.134]* n=74/431
+WF gpt5mini banded_h10_75 cutoff+60          h= 60 -0.046 [-0.092,-0.024]* n=259/102
+WF gpt5mini banded_h10_75 cutoff+60          h= 90 +0.001 [-0.033,+0.044]  n=274/215
+WF gpt5mini banded_h10_75 cutoff+60          h=120 +0.012 [-0.017,+0.054]  n=279/313
+WF gpt5mini banded_h10_75 placebo_2026-03-01 h= 60 +0.009 [-0.027,+0.072]  n=257/174
+WF gpt5mini banded_h10_75 placebo_2026-03-01 h= 90 +0.016 [-0.014,+0.055]  n=300/272
+WF gpt5mini banded_h10_75 placebo_2026-03-01 h=120 +0.013 [-0.016,+0.049]  n=315/352
+WF gpt5mini banded_h10_75 placebo_2026-04-01 h= 60 +0.056 [+0.026,+0.127]* n=127/189
+WF gpt5mini banded_h10_75 placebo_2026-04-01 h= 90 +0.026 [-0.014,+0.069]  n=217/268
+WF gpt5mini banded_h10_75 placebo_2026-04-01 h=120 +0.017 [-0.012,+0.051]  n=385/352
+WF gpt51    unbanded      cutoff-60          h= 60 n/a (n<10)
+WF gpt51    unbanded      cutoff-60          h= 90 n/a (n<10)
+WF gpt51    unbanded      cutoff-60          h=120 n/a (n<10)
+WF gpt51    unbanded      cutoff-30          h= 60 n/a (n<10)
+WF gpt51    unbanded      cutoff-30          h= 90 n/a (n<10)
+WF gpt51    unbanded      cutoff-30          h=120 n/a (n<10)
+WF gpt51    unbanded      cutoff+0           h= 60 n/a (n<10)
+WF gpt51    unbanded      cutoff+0           h= 90 n/a (n<10)
+WF gpt51    unbanded      cutoff+0           h=120 n/a (n<10)
+WF gpt51    unbanded      cutoff+30          h= 60 -0.006 [-0.067,+0.145]  n=29/214
+WF gpt51    unbanded      cutoff+30          h= 90 -0.009 [-0.068,+0.145]  n=29/298
+WF gpt51    unbanded      cutoff+30          h=120 +0.002 [-0.056,+0.165]  n=29/464
+WF gpt51    unbanded      cutoff+60          h= 60 -0.006 [-0.051,+0.034]  n=188/131
+WF gpt51    unbanded      cutoff+60          h= 90 +0.014 [-0.020,+0.059]  n=196/297
+WF gpt51    unbanded      cutoff+60          h=120 +0.022 [-0.013,+0.066]  n=196/409
+WF gpt51    unbanded      placebo_2026-03-01 h= 60 +0.016 [-0.024,+0.064]  n=214/250
+WF gpt51    unbanded      placebo_2026-03-01 h= 90 +0.023 [-0.012,+0.064]  n=235/362
+WF gpt51    unbanded      placebo_2026-03-01 h=120 +0.027 [-0.006,+0.065]  n=243/415
+WF gpt51    unbanded      placebo_2026-04-01 h= 60 +0.045 [+0.019,+0.109]* n=166/246
+WF gpt51    unbanded      placebo_2026-04-01 h= 90 +0.042 [+0.005,+0.081]* n=239/298
+WF gpt51    unbanded      placebo_2026-04-01 h=120 +0.039 [+0.013,+0.073]* n=352/363
+WF gpt51    banded_h10_75 cutoff-60          h= 60 n/a (n<10)
+WF gpt51    banded_h10_75 cutoff-60          h= 90 n/a (n<10)
+WF gpt51    banded_h10_75 cutoff-60          h=120 n/a (n<10)
+WF gpt51    banded_h10_75 cutoff-30          h= 60 n/a (n<10)
+WF gpt51    banded_h10_75 cutoff-30          h= 90 n/a (n<10)
+WF gpt51    banded_h10_75 cutoff-30          h=120 n/a (n<10)
+WF gpt51    banded_h10_75 cutoff+0           h= 60 n/a (n<10)
+WF gpt51    banded_h10_75 cutoff+0           h= 90 n/a (n<10)
+WF gpt51    banded_h10_75 cutoff+0           h=120 n/a (n<10)
+WF gpt51    banded_h10_75 cutoff+30          h= 60 -0.091 [-0.189,-0.060]* n=15/202
+WF gpt51    banded_h10_75 cutoff+30          h= 90 -0.084 [-0.184,-0.057]* n=15/261
+WF gpt51    banded_h10_75 cutoff+30          h=120 -0.086 [-0.196,-0.063]* n=15/371
+WF gpt51    banded_h10_75 cutoff+60          h= 60 +0.009 [-0.036,+0.053]  n=178/98
+WF gpt51    banded_h10_75 cutoff+60          h= 90 +0.000 [-0.045,+0.042]  n=178/208
+WF gpt51    banded_h10_75 cutoff+60          h=120 +0.011 [-0.033,+0.053]  n=178/298
+WF gpt51    banded_h10_75 placebo_2026-03-01 h= 60 +0.010 [-0.034,+0.052]  n=202/169
+WF gpt51    banded_h10_75 placebo_2026-03-01 h= 90 +0.015 [-0.023,+0.054]  n=217/259
+WF gpt51    banded_h10_75 placebo_2026-03-01 h=120 +0.020 [-0.018,+0.057]  n=217/297
+WF gpt51    banded_h10_75 placebo_2026-04-01 h= 60 +0.018 [-0.009,+0.077]  n=123/178
+WF gpt51    banded_h10_75 placebo_2026-04-01 h= 90 +0.024 [-0.022,+0.068]  n=192/214
+WF gpt51    banded_h10_75 placebo_2026-04-01 h=120 +0.024 [-0.006,+0.064]  n=301/227
+CM pool     cutoff-60          h= 60 -0.016 [-0.095,+0.088]  n=61/88
+CM pool     cutoff-60          h= 90 -0.005 [-0.069,+0.057]  n=77/163
+CM pool     cutoff-60          h=120 +0.012 [-0.045,+0.043]  n=152/468
+CM pool     cutoff-30          h= 60 +0.003 [-0.090,+0.049]  n=80/125
+CM pool     cutoff-30          h= 90 +0.032 [-0.030,+0.073]  n=99/430
+CM pool     cutoff-30          h=120 +0.025 [-0.020,+0.057]  n=115/488
+CM pool     cutoff+0           h= 60 +0.047 [-0.033,+0.099]  n=88/380
+CM pool     cutoff+0           h= 90 +0.034 [-0.007,+0.070]  n=130/438
+CM pool     cutoff+0           h=120 +0.035 [-0.001,+0.072]  n=149/535
+CM pool     cutoff+30          h= 60 +0.028 [-0.028,+0.098]  n=125/363
+CM pool     cutoff+30          h= 90 +0.029 [-0.010,+0.071]  n=163/460
+CM pool     cutoff+30          h=120 +0.036 [+0.007,+0.069]* n=205/631
+CM pool     cutoff+60          h= 60 -0.022 [-0.071,+0.004]  n=380/155
+CM pool     cutoff+60          h= 90 +0.010 [-0.022,+0.046]  n=430/326
+CM pool     cutoff+60          h=120 +0.016 [-0.012,+0.047]  n=468/462
+CM pool     placebo_2026-03-01 h= 60 +0.017 [-0.013,+0.050]  n=363/268
+CM pool     placebo_2026-03-01 h= 90 +0.019 [-0.005,+0.048]  n=438/404
+CM pool     placebo_2026-03-01 h=120 +0.029 [+0.009,+0.062]* n=488/536
+CM pool     placebo_2026-04-01 h= 60 +0.036 [+0.007,+0.078]* n=190/276
+CM pool     placebo_2026-04-01 h= 90 +0.032 [+0.009,+0.063]* n=310/407
+CM pool     placebo_2026-04-01 h=120 +0.017 [-0.004,+0.044]  n=564/542
+CM minimax  cutoff-60          h= 60 +0.001 [-0.094,+0.106]  n=61/88
+CM minimax  cutoff-60          h= 90 +0.010 [-0.053,+0.069]  n=77/163
+CM minimax  cutoff-60          h=120 +0.024 [-0.028,+0.056]  n=152/468
+CM minimax  cutoff-30          h= 60 +0.005 [-0.093,+0.050]  n=80/125
+CM minimax  cutoff-30          h= 90 +0.036 [-0.038,+0.080]  n=99/430
+CM minimax  cutoff-30          h=120 +0.033 [-0.012,+0.063]  n=115/488
+CM minimax  cutoff+0           h= 60 +0.043 [-0.029,+0.092]  n=88/380
+CM minimax  cutoff+0           h= 90 +0.036 [-0.003,+0.065]  n=130/438
+CM minimax  cutoff+0           h=120 +0.038 [+0.001,+0.071]* n=149/535
+CM minimax  cutoff+30          h= 60 +0.031 [-0.018,+0.095]  n=125/363
+CM minimax  cutoff+30          h= 90 +0.031 [-0.006,+0.069]  n=163/460
+CM minimax  cutoff+30          h=120 +0.043 [+0.014,+0.076]* n=205/631
+CM minimax  cutoff+60          h= 60 -0.019 [-0.063,+0.008]  n=380/155
+CM minimax  cutoff+60          h= 90 +0.017 [-0.018,+0.055]  n=430/326
+CM minimax  cutoff+60          h=120 +0.021 [-0.008,+0.053]  n=468/461
+CM minimax  placebo_2026-03-01 h= 60 +0.023 [-0.008,+0.065]  n=363/268
+CM minimax  placebo_2026-03-01 h= 90 +0.025 [-0.002,+0.059]  n=438/403
+CM minimax  placebo_2026-03-01 h=120 +0.034 [+0.012,+0.069]* n=488/535
+CM minimax  placebo_2026-04-01 h= 60 +0.041 [+0.009,+0.091]* n=190/275
+CM minimax  placebo_2026-04-01 h= 90 +0.036 [+0.011,+0.069]* n=310/406
+CM minimax  placebo_2026-04-01 h=120 +0.023 [-0.001,+0.052]  n=564/541
+CM opus47   cutoff-60          h= 60 -0.058 [-0.158,+0.098]  n=22/26
+CM opus47   cutoff-60          h= 90 -0.047 [-0.136,+0.125]  n=27/46
+CM opus47   cutoff-60          h=120 -0.031 [-0.107,+0.030]  n=50/123
+CM opus47   cutoff-30          h= 60 +0.024 [-0.078,+0.274]  n=29/34
+CM opus47   cutoff-30          h= 90 +0.033 [-0.029,+0.127]  n=34/111
+CM opus47   cutoff-30          h=120 +0.011 [-0.074,+0.096]  n=39/127
+CM opus47   cutoff+0           h= 60 +0.059 [-0.056,+0.178]  n=26/97
+CM opus47   cutoff+0           h= 90 +0.021 [-0.048,+0.127]  n=43/113
+CM opus47   cutoff+0           h=120 +0.017 [-0.044,+0.105]  n=48/141
+CM opus47   cutoff+30          h= 60 -0.004 [-0.302,+0.075]  n=34/93
+CM opus47   cutoff+30          h= 90 +0.011 [-0.143,+0.074]  n=46/121
+CM opus47   cutoff+30          h=120 -0.008 [-0.095,+0.050]  n=63/191
+CM opus47   cutoff+60          h= 60 -0.051 [-0.131,-0.018]* n=97/44
+CM opus47   cutoff+60          h= 90 -0.038 [-0.109,-0.002]* n=111/114
+CM opus47   cutoff+60          h=120 -0.030 [-0.094,+0.013]  n=123/152
+CM opus47   placebo_2026-03-01 h= 60 -0.030 [-0.093,+0.005]  n=93/98
+CM opus47   placebo_2026-03-01 h= 90 -0.034 [-0.102,+0.003]  n=113/136
+CM opus47   placebo_2026-03-01 h=120 -0.031 [-0.088,+0.005]  n=127/177
+CM opus47   placebo_2026-04-01 h= 60 +0.014 [-0.043,+0.043]  n=55/99
+CM opus47   placebo_2026-04-01 h= 90 -0.001 [-0.055,+0.033]  n=84/140
+CM opus47   placebo_2026-04-01 h=120 -0.026 [-0.075,+0.006]  n=152/180

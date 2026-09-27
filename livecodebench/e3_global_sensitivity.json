@@ -1,0 +1,238 @@
+{
+  "strict_old_control": {
+    "gpt4o_240513": {
+      "160": {
+        "estimate": 0.14904928488136882,
+        "ci": [
+          0.08059476214273818,
+          0.21293151043525846
+        ],
+        "n_pre": 207,
+        "n_post": 203
+      },
+      "240": {
+        "estimate": 0.167879939811515,
+        "ci": [
+          0.1049295161162588,
+          0.23069185079591342
+        ],
+        "n_pre": 207,
+        "n_post": 305
+      },
+      "365": {
+        "estimate": 0.1585662525879917,
+        "ci": [
+          0.10008518806073154,
+          0.21805620255348512
+        ],
+        "n_pre": 207,
+        "n_post": 504
+      },
+      "730": {
+        "estimate": 0.15887132191480016,
+        "ci": [
+          0.09936100131752304,
+          0.22066370223978915
+        ],
+        "n_pre": 207,
+        "n_post": 506
+      }
+    },
+    "gpt4o_240806": {
+      "160": {
+        "estimate": 0.145367792294329,
+        "ci": [
+          0.07274886366340642,
+          0.21910520930011185
+        ],
+        "n_pre": 207,
+        "n_post": 203
+      },
+      "240": {
+        "estimate": 0.159223885325097,
+        "ci": [
+          0.09116187534647976,
+          0.22831531638552302
+        ],
+        "n_pre": 207,
+        "n_post": 305
+      },
+      "365": {
+        "estimate": 0.15294168391994475,
+        "ci": [
+          0.08851363008971705,
+          0.21874999999999997
+        ],
+        "n_pre": 207,
+        "n_post": 504
+      },
+      "730": {
+        "estimate": 0.15311813790074658,
+        "ci": [
+          0.08796607378129118,
+          0.21847332015810272
+        ],
+        "n_pre": 207,
+        "n_post": 506
+      }
+    }
+  },
+  "profile_match": {
+    "gpt4o_240513": {
+      "difficulty": {
+        "correlation": 0.9896303734295807,
+        "centered_rmse": 0.057731316997960386,
+        "num_cells": 3
+      },
+      "quarter": {
+        "correlation": 0.3898796851472597,
+        "centered_rmse": 0.07637952881226184,
+        "num_cells": 6
+      }
+    },
+    "gpt4o_240806": {
+      "difficulty": {
+        "correlation": 0.9914992044157861,
+        "centered_rmse": 0.04409180143194538,
+        "num_cells": 3
+      },
+      "quarter": {
+        "correlation": 0.35798331229164543,
+        "centered_rmse": 0.07355257674383621,
+        "num_cells": 6
+      }
+    }
+  },
+  "extrapolation": {
+    "gpt4o_240513": {
+      "h240_degree1": {
+        "estimate": 0.06839297677776979,
+        "measured_pre": 0.5719806763285025,
+        "predicted_clean_pre": 0.5035876995507327,
+        "n_pre": 207,
+        "n_post": 305
+      },
+      "h240_degree2": {
+        "estimate": -0.17502760131989925,
+        "measured_pre": 0.5719806763285025,
+        "predicted_clean_pre": 0.7470082776484017,
+        "n_pre": 207,
+        "n_post": 305
+      },
+      "h240_degree3": {
+        "estimate": 0.037569412455080387,
+        "measured_pre": 0.5719806763285025,
+        "predicted_clean_pre": 0.5344112638734221,
+        "n_pre": 207,
+        "n_post": 305
+      },
+      "h365_degree1": {
+        "estimate": 0.10247109440031771,
+        "measured_pre": 0.5719806763285025,
+        "predicted_clean_pre": 0.46950958192818476,
+        "n_pre": 207,
+        "n_post": 507
+      },
+      "h365_degree2": {
+        "estimate": -0.012449103425615338,
+        "measured_pre": 0.5719806763285025,
+        "predicted_clean_pre": 0.5844297797541178,
+        "n_pre": 207,
+        "n_post": 507
+      },
+      "h365_degree3": {
+        "estimate": -0.15811645443530808,
+        "measured_pre": 0.5719806763285025,
+        "predicted_clean_pre": 0.7300971307638106,
+        "n_pre": 207,
+        "n_post": 507
+      },
+      "h730_degree1": {
+        "estimate": 0.10008755411902387,
+        "measured_pre": 0.5719806763285025,
+        "predicted_clean_pre": 0.4718931222094786,
+        "n_pre": 207,
+        "n_post": 673
+      },
+      "h730_degree2": {
+        "estimate": 0.060669430296069415,
+        "measured_pre": 0.5719806763285025,
+        "predicted_clean_pre": 0.511311246032433,
+        "n_pre": 207,
+        "n_post": 673
+      },
+      "h730_degree3": {
+        "estimate": -0.1276291691190925,
+        "measured_pre": 0.5719806763285025,
+        "predicted_clean_pre": 0.699609845447595,
+        "n_pre": 207,
+        "n_post": 673
+      }
+    },
+    "gpt4o_240806": {
+      "h240_degree1": {
+        "estimate": 0.06669852995680703,
+        "measured_pre": 0.533816425120773,
+        "predicted_clean_pre": 0.46711789516396596,
+        "n_pre": 207,
+        "n_post": 305
+      },
+      "h240_degree2": {
+        "estimate": -0.1052117297350591,
+        "measured_pre": 0.533816425120773,
+        "predicted_clean_pre": 0.6390281548558321,
+        "n_pre": 207,
+        "n_post": 305
+      },
+      "h240_degree3": {
+        "estimate": 0.1723873708711708,
+        "measured_pre": 0.533816425120773,
+        "predicted_clean_pre": 0.3614290542496022,
+        "n_pre": 207,
+        "n_post": 305
+      },
+      "h365_degree1": {
+        "estimate": 0.09380846555425032,
+        "measured_pre": 0.533816425120773,
+        "predicted_clean_pre": 0.44000795956652267,
+        "n_pre": 207,
+        "n_post": 507
+      },
+      "h365_degree2": {
+        "estimate": -0.00523881588761832,
+        "measured_pre": 0.533816425120773,
+        "predicted_clean_pre": 0.5390552410083913,
+        "n_pre": 207,
+        "n_post": 507
+      },
+      "h365_degree3": {
+        "estimate": -0.05618162641693103,
+        "measured_pre": 0.533816425120773,
+        "predicted_clean_pre": 0.589998051537704,
+        "n_pre": 207,
+        "n_post": 507
+      },
+      "h730_degree1": {
+        "estimate": 0.10145112028690534,
+        "measured_pre": 0.533816425120773,
+        "predicted_clean_pre": 0.43236530483386765,
+        "n_pre": 207,
+        "n_post": 848
+      },
+      "h730_degree2": {
+        "estimate": 0.06006061381128236,
+        "measured_pre": 0.533816425120773,
+        "predicted_clean_pre": 0.4737558113094906,
+        "n_pre": 207,
+        "n_post": 848
+      },
+      "h730_degree3": {
+        "estimate": 0.005017565695379256,
+        "measured_pre": 0.533816425120773,
+        "predicted_clean_pre": 0.5287988594253937,
+        "n_pre": 207,
+        "n_post": 848
+      }
+    }
+  }
+}

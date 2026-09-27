@@ -2,8 +2,7 @@
 
 Principles: no in-figure titles (captions carry the explanation), small
 consistent fonts, one palette, no top/right spines, panel letters for
-multi-panel figures. Figures are saved to both the experiment figures/
-directory and the paper's figures/ directory.
+multi-panel figures. Figures are saved to experiments/figures/.
 """
 from pathlib import Path
 
@@ -11,11 +10,8 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-REDESIGN = Path(__file__).resolve().parent.parent
-FIG_DIRS = [
-    REDESIGN / "figures",
-    REDESIGN.parent.parent / "Theory" / "tmlr_paper" / "figures",
-]
+ROOT = Path(__file__).resolve().parent.parent
+FIG_DIRS = [ROOT / "figures"]
 
 BLUE = "#3A6EA5"
 RED = "#D1495B"

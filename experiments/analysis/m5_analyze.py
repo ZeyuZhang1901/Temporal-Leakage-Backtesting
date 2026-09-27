@@ -18,7 +18,7 @@ from pathlib import Path
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from forecasting_common import (REDESIGN, cluster_bootstrap_gap, did_gap,
+from forecasting_common import (ROOT, cluster_bootstrap_gap, did_gap,
                                 cluster_bootstrap_did, joined, load_panel,
                                 naive_gap)
 
@@ -156,8 +156,8 @@ def main():
     results["power"] = power_injection(t_rows, c_map)
     print("power:", results["power"])
 
-    (REDESIGN / "m5").mkdir(exist_ok=True)
-    (REDESIGN / "m5" / "results.json").write_text(
+    (ROOT / "m5").mkdir(exist_ok=True)
+    (ROOT / "m5" / "results.json").write_text(
         json.dumps(results, indent=1))
     print("saved m5/results.json")
 
