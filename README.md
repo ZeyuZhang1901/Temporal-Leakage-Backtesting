@@ -25,6 +25,7 @@ directory.
 | GPT-5.5 sensitivity (E.9) | `experiments/analysis/e9_gpt55_sensitivity.py`, `experiments/analysis/e9_gpt55_prediction.py` | `experiments/e9/gpt55_*.json` |
 | Power floors (E.7, E.9) | `experiments/analysis/e9_power_controls.py` | `experiments/e9/power_controls.json` |
 | Anchor-arm windows (D.5) | `experiments/analysis/e9_anchor_windows.py` | `experiments/e9/anchor_windows.json` |
+| Jump decomposition under spillover (D.4) | `experiments/analysis/e9_spillover.py` | `experiments/e9/spillover.json` |
 | Main-text figures | `experiments/analysis/paper_figures.py` | `experiments/figures/*.png` |
 | Appendix figures | `experiments/analysis/appendix_figures.py` | `experiments/figures/*.png` |
 

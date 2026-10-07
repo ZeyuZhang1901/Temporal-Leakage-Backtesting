@@ -1,0 +1,22 @@
+M3 twins, +-90 d around T* (n=275/407)
+  J_treatment              +0.0520 [+0.0071,+0.0951]
+  J_control_twin           +0.0116 [-0.0217,+0.0449]
+  leakage                  +0.0253 [-0.0088,+0.0635]
+  spillover_observed       +0.0150 [-0.0318,+0.0570]
+  spillover_pred_prob      +0.0338 [+0.0099,+0.0570]
+  spillover_pred_logit     +0.0507 [+0.0118,+0.0878]
+  identity_residual        -0.0000 [-0.0000,+0.0000]
+GPT-5.5 archived-forecast arm, unbanded, +-90 d (n=60/339)
+  J                        +0.0779 [+0.0577,+0.1217]
+  spill_prob               +0.0046 [-0.0019,+0.0149]
+  spill_logit              +0.0035 [-0.0018,+0.0170]
+  J_corrected_prob         +0.0733 [+0.0532,+0.1157]
+  J_corrected_logit        +0.0745 [+0.0545,+0.1160]
+  post_lean_prob           +0.0242 [+0.0131,+0.0496]
+GPT-5.5 archived-forecast arm, banded_h10_75, +-90 d (n=31/300)
+  J                        +0.1085 [+0.0567,+0.1889]
+  spill_prob               +0.0046 [-0.0041,+0.0140]
+  spill_logit              +0.0025 [-0.0018,+0.0105]
+  J_corrected_prob         +0.1039 [+0.0555,+0.1800]
+  J_corrected_logit        +0.1060 [+0.0555,+0.1873]
+  post_lean_prob           +0.0224 [+0.0120,+0.0408]

@@ -67,3 +67,19 @@
    is explained by pool base rates: pre-T* YES rate 0.17-0.18 (lean
    cost-free, dose-0 null), post-T* YES rate 0.355 (lean costs 0.028
    Brier). Dose-0 differencing removes the shift exactly.
+
+10. **Revision update to entries 6 and 7 (2026-10-06, TMLR review).**
+   Entry 6: the horizon band is no longer the primary GPT-5.5 estimate. The
+   primary estimate is the pre-specified unbanded jump at +-90 days, the
+   window of the rest of the M4-F matrix: +0.078 [+0.057,+0.124], n=60/339.
+   The 10-75-day band is reported as this logged deviation: +0.108
+   [+0.057,+0.192], n=31/300. The submitted version reported the +-120-day
+   values (+0.061 unbanded, +0.106 banded).
+   Entry 7: the placebo-jump values above differ from the values that the
+   released code computes (experiments/analysis/e9_anchor_windows.py). With
+   that code, the December 2025 jump is +0.031 [-0.019,+0.328] (n=39/327) at
+   +-90 days and +0.026 [-0.029,+0.120] (n=39/419) at +-120 days, both null.
+   Starred dates: November 2025 (+0.045 at +-90 d, +0.048 at +-120 d, from
+   12 pre-boundary questions), March 2026 (-0.039 at +-90 d, -0.036 at
+   +-120 d), and April 2026 (-0.027, +-120 d only). The revised paper reports
+   these values (App. D.5, App. E.9).
