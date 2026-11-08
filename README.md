@@ -1,7 +1,9 @@
 # Temporal Leakage in LLM Backtesting — Reproducibility Package
 
-Code, data, and result files for the TMLR submission *Temporal Leakage in LLM
-Backtesting: Measurement, Validation, and Adjusted Scores*. Appendix F
+Code, data, and result files for *Temporal Leakage in LLM Backtesting:
+Measurement, Validation, and Adjusted Scores* (Zeyu Zhang and Bradly C. Stadie),
+accepted in Transactions on Machine Learning Research (TMLR), 2026. Reviewed on
+OpenReview: https://openreview.net/forum?id=x3qagPELrp. Appendix F
 (Table 9) of the paper maps every reported result to its generating script and
 output file; the layout here mirrors that table. Paths are relative to this
 directory.
