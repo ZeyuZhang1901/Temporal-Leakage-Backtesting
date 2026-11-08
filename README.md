@@ -63,6 +63,7 @@ Scripts that query models (panel scoring, M4-F anchor arm, matched PRC) require
 (`experiments/m3/train_twin.py`) requires Tinker API access. All randomness is
 seeded; bootstrap and permutation settings are those documented in Appendix D.
 
-Twin checkpoints (LoRA adapters for the treatment and control twins) exceed
-the size limit of anonymous hosting and will be released with the
-de-anonymized version.
+Twin checkpoints (LoRA adapters for the treatment and control twins) are not
+included because of their size. `experiments/m3/build_corpus.py` rebuilds the
+training corpus from the panel, and `experiments/m3/train_twin.py` retrains
+the twins from it.
